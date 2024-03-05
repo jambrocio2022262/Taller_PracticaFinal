@@ -2,18 +2,23 @@ import { Router } from "express";
 import { check } from "express-validator";
 
 import{
-    usuarioPost
+    usuarioPost,
+    usuarioGet,
+    usuarioDelete,
+    usuarioPut
 } from './user.controller.js';
 
 import{
     existeEmail,
+    existeUsuarioById
 } from '../helpers/db-validators.js'
 
 import {validarCampos} from '../middlewares/validar-campos.js'
-/*import { tieneRole } from "../middlewares/validar-roles.js";
-import { validarJWT } from "../middlewares/validar-jwt.js";*/
+import { validarJWT } from "../middlewares/validar-jwt.js";
 
 const router = Router();
+
+router.get("/",usuarioGet);
 
 router.post(
     "/",
@@ -25,5 +30,23 @@ router.post(
         check("role", "The role must be ADMIN_ROLE / CLIENT_ROLE").not().isEmpty(),
         validarCampos,
     ],usuarioPost)
+
+router.put(
+    "/:id",
+    [
+        check("id","The ID is not valid"),
+        check("id").custom(existeUsuarioById),
+        validarCampos
+    ], usuarioPut)
+
+router.delete(
+        "/:id",
+    [   
+        validarJWT,
+        check("id", "The ID is not valid").isMongoId(),
+        check("id").custom(existeUsuarioById),
+        validarCampos,
+    ],usuarioDelete);
+
 
 export default router;
