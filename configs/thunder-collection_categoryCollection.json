@@ -1,0 +1,89 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "categoryCollection",
+    "dateExported": "2024-03-05T23:20:56.543Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "c8c3a4ef-b7c9-4679-a61e-e5066dc8b190",
+            "colId": "4f9f203d-2998-4373-ac30-28bd2f88676e",
+            "containerId": "",
+            "name": "category post",
+            "url": "http://localhost:8080/FinalProject/v1/category",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-05T19:46:55.304Z",
+            "modified": "2024-03-05T20:02:08.566Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Chocolate\",\n  \"description\": \"Chocolates Importados US\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "9621d4db-6386-4c18-a09f-dca5616ba0a7",
+            "colId": "4f9f203d-2998-4373-ac30-28bd2f88676e",
+            "containerId": "",
+            "name": "category get",
+            "url": "http://localhost:8080/FinalProject/v1/category?desde=0&limite=20",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-05T20:01:01.345Z",
+            "modified": "2024-03-05T20:02:21.668Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "desde",
+                    "value": "0",
+                    "isPath": false
+                },
+                {
+                    "name": "limite",
+                    "value": "20",
+                    "isPath": false
+                }
+            ],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "485b05f7-8f14-45de-af3b-b32506cf90e0",
+            "colId": "4f9f203d-2998-4373-ac30-28bd2f88676e",
+            "containerId": "",
+            "name": "category put",
+            "url": "http://localhost:8080/FinalProject/v1/category/65e77b54707ccdcd7f456e90",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-03-05T20:22:24.042Z",
+            "modified": "2024-03-05T20:24:35.029Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\": \"Chocolates\",\n  \"description\": \"Chocolates Importados ARG\"\n}",
+                "form": []
+            },
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "dd9fc7f9-ac48-4ca6-bf63-2b77faf36663",
+            "colId": "4f9f203d-2998-4373-ac30-28bd2f88676e",
+            "containerId": "",
+            "name": "category delete",
+            "url": "http://localhost:8080/FinalProject/v1/category/65e77b54707ccdcd7f456e90",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2024-03-05T20:26:31.496Z",
+            "modified": "2024-03-05T20:26:42.775Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

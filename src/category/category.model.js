@@ -9,6 +9,10 @@ const CategorySchema = mongoose.Schema({
         type: String,
         require: [true, "The description is obligatory"]
     },
+    products:{
+        type: [mongoose.Schema.Types.ObjectId],
+        require: true
+    },
     status: {
         type: Boolean,
         default: true
