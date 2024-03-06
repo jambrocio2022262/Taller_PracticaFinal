@@ -1,40 +1,40 @@
 {
     "client": "Thunder Client",
     "collectionName": "usersCollection",
-    "dateExported": "2024-03-05T23:20:37.696Z",
+    "dateExported": "2024-03-06T06:44:49.929Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "b2ecb27a-e03a-47ff-b505-57e69ed33285",
-            "colId": "f7d794db-e295-4699-990d-b557b33202f9",
+            "_id": "127d4c70-ed7e-496b-8a36-e69fabb0dc06",
+            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
             "containerId": "",
             "name": "user post",
             "url": "http://localhost:8080/FinalProject/v1/users",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-05T18:58:58.806Z",
-            "modified": "2024-03-05T21:47:44.067Z",
+            "created": "2024-03-06T03:58:09.461Z",
+            "modified": "2024-03-06T04:45:34.747Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Josue Ambrocio\",\n  \"email\":\"jambrocio90@gmail.com\",\n  \"password\":\"123456\",\n  \"role\":\"ADMIN_ROLE\"\n}",
+                "raw": "{\n  \"name\":\"Josue Ambrocio\",\n  \"email\":\"jambrocio90@gmail.com\",\n  \"password\":\"123456\",\n  \"role\":\"CLIENT_ROLE\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "a679855f-817f-4471-a504-c6ca7403d232",
-            "colId": "f7d794db-e295-4699-990d-b557b33202f9",
+            "_id": "3e666b33-4baa-43e7-b7f7-ff1ea9c959bb",
+            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
             "containerId": "",
             "name": "user get",
             "url": "http://localhost:8080/FinalProject/v1/users?desde=0&limite=20",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-05T18:58:58.807Z",
-            "modified": "2024-03-05T18:58:58.807Z",
+            "created": "2024-03-06T03:58:09.462Z",
+            "modified": "2024-03-06T03:58:09.462Z",
             "headers": [],
             "params": [
                 {
@@ -51,15 +51,15 @@
             "tests": []
         },
         {
-            "_id": "e74bb787-49d2-47af-bb84-ae71ef9b4c35",
-            "colId": "f7d794db-e295-4699-990d-b557b33202f9",
+            "_id": "3b5b3b6f-25a8-49e6-806e-ce01cb93354b",
+            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
             "containerId": "",
             "name": "user put",
             "url": "http://localhost:8080/FinalProject/v1/users/65e792aca99c5c6e61253f3b",
             "method": "PUT",
             "sortNum": 30000,
-            "created": "2024-03-05T18:58:58.808Z",
-            "modified": "2024-03-05T21:47:06.070Z",
+            "created": "2024-03-06T03:58:09.463Z",
+            "modified": "2024-03-06T03:58:09.463Z",
             "headers": [],
             "params": [],
             "body": {
@@ -67,19 +67,18 @@
                 "raw": "{\n  \"name\":\"Josue Ambrocio\",\n  \"email\":\"jambrocio@kinal.com\",\n  \"password\":\"123456\",\n  \"role\":\"ADMIN_ROLE\"\n}",
                 "form": []
             },
-            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "dc6ecf9a-acce-448b-9593-17dd0eabcb79",
-            "colId": "f7d794db-e295-4699-990d-b557b33202f9",
+            "_id": "e9695ab7-cf16-4ee9-98da-6ca67e8e86bd",
+            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
             "containerId": "",
             "name": "user delete",
             "url": "http://localhost:8080/FinalProject/v1/users/65e792ffa99c5c6e61253f44",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-05T18:58:58.809Z",
-            "modified": "2024-03-05T21:51:10.924Z",
+            "created": "2024-03-06T03:58:09.464Z",
+            "modified": "2024-03-06T03:58:09.464Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -87,7 +86,6 @@
                 }
             ],
             "params": [],
-            "reqType": "del",
             "tests": []
         }
     ]
