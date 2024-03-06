@@ -93,3 +93,11 @@ export const productPut = async(req, res= response) =>{
         return res.status(500).json({msg: "Error updating the product"})
     }
 }
+
+export const productDelete = async(req, res) =>{
+    const {id} = req.params;
+
+    const product = await Product.findByIdAndUpdate(id, {status: false});
+
+    res.status(200).json({msg:" Product eliminated", product})
+}

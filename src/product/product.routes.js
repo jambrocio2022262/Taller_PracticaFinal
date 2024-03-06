@@ -2,6 +2,7 @@ import  {Router} from 'express'
 import { check } from 'express-validator'
 
 import{
+    productDelete,
     productGet,
     productPost,
     productPut
@@ -41,5 +42,14 @@ router.put(
         check("id").custom(existeProductoById),
         validarCampos,
     ], productPut)
+
+ router.delete(
+    "/:id",
+    [
+        validarJWT,
+        check("id", "ID not valid").isMongoId(),
+        check("id").custom(existeProductoById),
+        validarCampos,
+    ], productDelete)   
 
 export default router;
