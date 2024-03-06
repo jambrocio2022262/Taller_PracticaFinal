@@ -1,39 +1,45 @@
 {
     "client": "Thunder Client",
     "collectionName": "categoryCollection",
-    "dateExported": "2024-03-06T06:44:58.089Z",
+    "dateExported": "2024-03-06T23:15:00.387Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "c4a6808f-dd86-4984-b33d-5aade6dedfcf",
-            "colId": "dfc51fa1-83ac-4dd3-b81b-c74895b4c2cf",
+            "_id": "9859806b-697a-4664-bf83-e4985ab69753",
+            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
             "containerId": "",
             "name": "category post",
             "url": "http://localhost:8080/FinalProject/v1/category",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-06T03:58:09.422Z",
-            "modified": "2024-03-06T03:58:09.422Z",
-            "headers": [],
+            "created": "2024-03-06T20:34:41.378Z",
+            "modified": "2024-03-06T20:41:00.923Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4ZDNmNTBjMTRiMGQ4NGNmYjljMDMiLCJpYXQiOjE3MDk3NTc1NzgsImV4cCI6MTcwOTc2MTE3OH0.6w6__PSqTy-Yi_Y4wp0QUSGuFDHAA8MBmEpCOcuf84s"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Chocolate\",\n  \"description\": \"Chocolates Importados US\"\n}",
+                "raw": "{\n  \"name\": \"Helado\",\n  \"description\": \"Chocolates Importados US\"\n}",
                 "form": []
             },
+            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "08e7f9d3-dddf-4e88-a080-0eccb988aa23",
-            "colId": "dfc51fa1-83ac-4dd3-b81b-c74895b4c2cf",
+            "_id": "f5b38699-7a00-47d0-907c-43a68be8404e",
+            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
             "containerId": "",
             "name": "category get",
             "url": "http://localhost:8080/FinalProject/v1/category?desde=0&limite=20",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-06T03:58:09.423Z",
-            "modified": "2024-03-06T03:58:09.423Z",
+            "created": "2024-03-06T20:34:41.379Z",
+            "modified": "2024-03-06T20:34:41.379Z",
             "headers": [],
             "params": [
                 {
@@ -50,36 +56,48 @@
             "tests": []
         },
         {
-            "_id": "c0a6d667-ea74-470b-a432-5cfc394634ae",
-            "colId": "dfc51fa1-83ac-4dd3-b81b-c74895b4c2cf",
+            "_id": "67fa42f1-7e1d-46be-b201-2a3a1c5cb1cb",
+            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
             "containerId": "",
             "name": "category put",
-            "url": "http://localhost:8080/FinalProject/v1/category/65e77b54707ccdcd7f456e90",
+            "url": "http://localhost:8080/FinalProject/v1/category/65e8d4dcd4a198fbccd3cd80",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-03-06T03:58:09.424Z",
-            "modified": "2024-03-06T03:58:09.424Z",
-            "headers": [],
+            "created": "2024-03-06T20:34:41.380Z",
+            "modified": "2024-03-06T20:41:58.285Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4ZDNmNTBjMTRiMGQ4NGNmYjljMDMiLCJpYXQiOjE3MDk3NTc1NzgsImV4cCI6MTcwOTc2MTE3OH0.6w6__PSqTy-Yi_Y4wp0QUSGuFDHAA8MBmEpCOcuf84s"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
                 "raw": "{\n  \"name\": \"Chocolates\",\n  \"description\": \"Chocolates Importados ARG\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "1ad9663b-ec5c-49a2-8e0b-d099c49a4c48",
-            "colId": "dfc51fa1-83ac-4dd3-b81b-c74895b4c2cf",
+            "_id": "35bc2245-70f2-48a0-8724-17c1a2b3f1c9",
+            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
             "containerId": "",
             "name": "category delete",
-            "url": "http://localhost:8080/FinalProject/v1/category/65e77b54707ccdcd7f456e90",
+            "url": "http://localhost:8080/FinalProject/v1/category/65e8d41f0c14b0d84cfb9c07",
             "method": "DELETE",
             "sortNum": 50000,
-            "created": "2024-03-06T03:58:09.425Z",
-            "modified": "2024-03-06T03:58:09.425Z",
-            "headers": [],
+            "created": "2024-03-06T20:34:41.381Z",
+            "modified": "2024-03-06T20:42:37.069Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4ZDNmNTBjMTRiMGQ4NGNmYjljMDMiLCJpYXQiOjE3MDk3NTc1NzgsImV4cCI6MTcwOTc2MTE3OH0.6w6__PSqTy-Yi_Y4wp0QUSGuFDHAA8MBmEpCOcuf84s"
+                }
+            ],
             "params": [],
+            "reqType": "del",
             "tests": []
         }
     ]

@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "usersCollection",
-    "dateExported": "2024-03-06T06:44:49.929Z",
+    "dateExported": "2024-03-06T23:15:20.824Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "127d4c70-ed7e-496b-8a36-e69fabb0dc06",
-            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
+            "_id": "afa5b12b-24e6-4ce6-8a8c-897d5d686304",
+            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
             "containerId": "",
             "name": "user post",
             "url": "http://localhost:8080/FinalProject/v1/users",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-06T03:58:09.461Z",
-            "modified": "2024-03-06T04:45:34.747Z",
+            "created": "2024-03-06T20:34:41.433Z",
+            "modified": "2024-03-06T20:34:41.433Z",
             "headers": [],
             "params": [],
             "body": {
@@ -22,19 +22,18 @@
                 "raw": "{\n  \"name\":\"Josue Ambrocio\",\n  \"email\":\"jambrocio90@gmail.com\",\n  \"password\":\"123456\",\n  \"role\":\"CLIENT_ROLE\"\n}",
                 "form": []
             },
-            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "3e666b33-4baa-43e7-b7f7-ff1ea9c959bb",
-            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
+            "_id": "62bd8c47-f5c9-4cf0-b35e-6abbf4710483",
+            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
             "containerId": "",
             "name": "user get",
             "url": "http://localhost:8080/FinalProject/v1/users?desde=0&limite=20",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-06T03:58:09.462Z",
-            "modified": "2024-03-06T03:58:09.462Z",
+            "created": "2024-03-06T20:34:41.434Z",
+            "modified": "2024-03-06T20:34:41.434Z",
             "headers": [],
             "params": [
                 {
@@ -51,15 +50,15 @@
             "tests": []
         },
         {
-            "_id": "3b5b3b6f-25a8-49e6-806e-ce01cb93354b",
-            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
+            "_id": "f5b91212-f364-4750-aa29-a7f402975ff0",
+            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
             "containerId": "",
             "name": "user put",
             "url": "http://localhost:8080/FinalProject/v1/users/65e792aca99c5c6e61253f3b",
             "method": "PUT",
             "sortNum": 30000,
-            "created": "2024-03-06T03:58:09.463Z",
-            "modified": "2024-03-06T03:58:09.463Z",
+            "created": "2024-03-06T20:34:41.435Z",
+            "modified": "2024-03-06T20:34:41.435Z",
             "headers": [],
             "params": [],
             "body": {
@@ -70,15 +69,15 @@
             "tests": []
         },
         {
-            "_id": "e9695ab7-cf16-4ee9-98da-6ca67e8e86bd",
-            "colId": "4d4d412a-745e-4ed5-a145-e39f8ced27dd",
+            "_id": "449642b9-5a26-4a37-8a02-2640de4794d4",
+            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
             "containerId": "",
             "name": "user delete",
             "url": "http://localhost:8080/FinalProject/v1/users/65e792ffa99c5c6e61253f44",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-06T03:58:09.464Z",
-            "modified": "2024-03-06T03:58:09.464Z",
+            "created": "2024-03-06T20:34:41.437Z",
+            "modified": "2024-03-06T20:34:41.437Z",
             "headers": [
                 {
                     "name": "x-token",
