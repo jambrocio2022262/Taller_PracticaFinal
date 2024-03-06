@@ -33,3 +33,26 @@ export const productPost = async (req, res) =>{
     }
     
 }
+
+export const productGet = async(req, res) =>{
+    const {limite, desde} = req.query;
+
+    try{
+        const [total, products] = await Promise.all([
+            Product.countDocuments({status: true}),
+            Product.find({status: true})
+            .populate('category', 'name')
+            .skip(Number(desde))
+            .limit(Number(limite))
+        ])
+
+        res.status(200).json({
+            total,
+            products
+        })
+    }catch(error){
+        console.error(error);
+        res.status(500).json({ error: "There was an error in bringing products"})
+    }
+
+}
