@@ -40,14 +40,14 @@ export const categoryPut = async (req, res = response) =>{
 
     res.status(200).json({
         msg: 'Update Category',
-        category
+        category 
     })
 }
 
 export const categoryDelete = async (req, res) =>{
     const{id} = req.params;
 
-    const category = await Category.findByIdAndUpdate(id, {status: false});
+    const category = await Category.findByIdAndDelete(id);
     const categoryAutenticada = req.category;
 
     res.status(200).json({msg: 'Category Delete', category, categoryAutenticada})

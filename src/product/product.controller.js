@@ -12,7 +12,7 @@ export const productPost = async (req, res) =>{
         const category = await Category.findOne({name: data.category});
 
         if(!category){
-            return res.status(404).json({msg: "Category not found"})
+            return res.status(404).json({msg: "Category not found"});
         }
 
         const product = new Product({
