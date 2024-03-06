@@ -3,7 +3,8 @@ import { check } from 'express-validator'
 
 import{
     productGet,
-    productPost
+    productPost,
+    productPut
 } from './product.controller.js'
 
 import {
@@ -31,5 +32,14 @@ router.post(
         check("stock").custom(validarStock),
         validarCampos,
     ], productPost)
+
+router.put(
+    "/:id",
+    [
+        validarJWT,
+        check("id", "ID not valid").isMongoId(),
+        check("id").custom(existeProductoById),
+        validarCampos,
+    ], productPut)
 
 export default router;
