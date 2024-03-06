@@ -5,10 +5,12 @@ import cors from 'cors'
 import helmet from 'helmet'
 import morgan from 'morgan'
 import { dbConnection } from './mongo.js';
+import User from '../src/users/user.model.js'
+import bcryptjs from 'bcryptjs'
 import userRoutes from '../src/users/user.routes.js'
 import authRoutes from '../src/auth/auth.routes.js'
 import categoryRoutes from '../src/category/category.routes.js'
-
+import productRoutes from '../src/product/product.routes.js'
 
 class Server{
     constructor(){
@@ -17,6 +19,7 @@ class Server{
         this.usuarioPath = '/FinalProject/v1/users'
         this.authPath = '/FinalProject/v1/auth'
         this.categoryPath ='/FinalProject/v1/category'
+        this.productPath ='/FinalProject/v1/product'
 
 
         this.middlewares();
@@ -27,6 +30,17 @@ class Server{
 
     async conectarDB(){
         await dbConnection();
+        const lengthUsers = await User.countDocuments();
+        if(lengthUsers > 0) return;
+
+        const salt = bcryptjs.genSaltSync();
+        const password = bcryptjs.hashSync('123456', salt);
+
+        const adminUser = new User(
+            {name: "Josue Ambrocio", email: "admin@gmail.com", password, role: "ADMIN_ROLE"}
+        )
+
+        adminUser.save();
     }
     
     middlewares(){
@@ -41,6 +55,7 @@ class Server{
         this.app.use(this.usuarioPath, userRoutes);
         this.app.use(this.authPath, authRoutes);
         this.app.use(this.categoryPath, categoryRoutes);
+        this.app.use(this.productPath, productRoutes);
     }
 
     listen(){
