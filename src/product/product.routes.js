@@ -6,7 +6,8 @@ import{
     productGet,
     productPost,
     productPut,
-    controlInventario
+    controlInventario,
+    productosAgotados
 } from './product.controller.js'
 
 import {
@@ -22,6 +23,7 @@ const router = Router();
 
 router.get("/", productGet);
 router.get("/control", controlInventario);
+router.get("/agotados", productosAgotados);
 
 router.post(
     "/",

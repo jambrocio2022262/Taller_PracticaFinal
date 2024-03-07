@@ -2,7 +2,7 @@
 
 import Product from '../product/product.model.js'
 import Category from '../category/category.model.js'
-import { response } from 'express';
+import { json, response } from 'express';
 import mongoose from 'mongoose';
 
 export const productPost = async (req, res) =>{
@@ -109,5 +109,16 @@ export const controlInventario = async (req, res) =>{
     } catch (error) {
         console.error('Error en obtener el control de inventario', error);
         res.status(500).json({error: 'Error en obtener el control de inventario'});
+    }
+}
+
+
+export const productosAgotados = async (req, res) =>{
+    try {
+        const productosAgotado = await Product.find({stock: 0}, 'name stock description')
+        res.status(200).json(productosAgotado);
+    } catch (error) {
+        console.error('Error al obtener el producto en inexistencia: ', error);
+        res.status(500).json({error: 'Error al obtener el producto en inexistencia'});
     }
 }
