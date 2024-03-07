@@ -5,11 +5,12 @@ import{
     productDelete,
     productGet,
     productPost,
-    productPut
+    productPut,
+    controlInventario
 } from './product.controller.js'
 
 import {
-    validarStock,
+    /*validarStock,*/
     existeProductos,
     existeProductoById
 } from "../helpers/db-validators.js"
@@ -20,6 +21,7 @@ import {validarJWT} from '../middlewares/validar-jwt.js'
 const router = Router();
 
 router.get("/", productGet);
+router.get("/control", controlInventario);
 
 router.post(
     "/",
@@ -30,7 +32,7 @@ router.post(
         check("description", "The desciprion is obligatory").not().isEmpty(),
         check("price", "The price is obligatory").not().isEmpty(),
         check("stock", "The stock is obligatory").not().isEmpty(),
-        check("stock").custom(validarStock),
+        /*check("stock").custom(validarStock),*/
         validarCampos,
     ], productPost)
 

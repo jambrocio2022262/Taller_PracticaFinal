@@ -101,3 +101,13 @@ export const productDelete = async(req, res) =>{
 
     res.status(200).json({msg:" Product eliminated", product})
 }
+
+export const controlInventario = async (req, res) =>{
+    try {
+        const product = await Product.find({}, 'name stock description');
+        res.status(200).json(product);
+    } catch (error) {
+        console.error('Error en obtener el control de inventario', error);
+        res.status(500).json({error: 'Error en obtener el control de inventario'});
+    }
+}

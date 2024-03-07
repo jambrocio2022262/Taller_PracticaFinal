@@ -31,7 +31,7 @@ export const existeCaregoriaById = async (name = '') => {
     }
 }
 
-export const validarStock= async (stock = "") => {
+/*export const validarStock= async (stock = "") => {
     if(stock < 0){
         throw new Error('Stock cannot be less than 0');
     }
@@ -39,7 +39,7 @@ export const validarStock= async (stock = "") => {
     if(stock == 0){
         throw new Error('Stock be equal to 0');
     }
-}
+}*/
 
 
 export const existeProductos = async (name = '') => {
