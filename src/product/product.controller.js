@@ -122,3 +122,34 @@ export const productosAgotados = async (req, res) =>{
         res.status(500).json({error: 'Error al obtener el producto en inexistencia'});
     }
 }
+
+export const buscarProducto = async (req, res) =>{
+    const {name} = req.query;
+
+    try {
+        const product = await Product.find({name:{$regex: new RegExp(name, 'i')}});
+        res.status(200).json({product});
+
+    } catch (error) {
+        console.error('Error al buscar el producto', error);
+        res.status(500).json({error: 'Error al buscar el producto'});
+    }
+}
+
+export const catalogoProducto = async (req, res) =>{
+    const {category} = req.params;
+
+    try {
+        const categoryFound = await Category.findOne({name: category});
+
+        if(!categoryFound){
+            return res.status(404).json({error: 'Category not found'})
+        }
+
+        const product = await Product.find({category: categoryFound._id});
+        res.status(200).json({product})
+    } catch (error) {
+        console.error('Error en el catalogo del producto', error)
+        res.status(500).json({error: 'Error en el catalogo del producto'});
+    }
+}
