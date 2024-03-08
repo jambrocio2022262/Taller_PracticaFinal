@@ -13,7 +13,13 @@ export const validarJWT = async (req, res, next) =>{
     try{
         const {uid} = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
         const usuario = await User.findById(uid);
-
+        
+        if(!usuario){
+            return res.status(401).json({
+                msg: 'User not exist in the DB'
+            })
+        }
+        
         if(!usuario.status){
             return res.status(401).json({
                 msg: "invalid token - user with status:false"
@@ -21,12 +27,6 @@ export const validarJWT = async (req, res, next) =>{
         }
 
         req.usuario = usuario;
-
-        if(usuario.role !== 'ADMIN_ROLE'){
-            return res.status(400).json({
-                msg: "You not have access"
-            });
-        }
 
         next();
     }catch(e){
