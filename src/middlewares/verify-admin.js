@@ -4,7 +4,7 @@ export const isAdmin = (req, res, next) => {
   if (user.role === "ADMIN_ROLE") return next();
 
   return res.status(400).json({
-    msg: "You not have access",
+    msg: "You not have access, only admin",
   });
 };
 
@@ -14,7 +14,7 @@ export const isClient = (req, res, next) => {
     if (user.role === "CLIENT_ROLE") return next();
   
     return res.status(400).json({
-      msg: "You not have access, ",
+      msg: "You not have access, only clients ",
     });
   };
 

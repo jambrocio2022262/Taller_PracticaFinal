@@ -13,7 +13,7 @@ import{
 } from './product.controller.js'
 
 import {
-    /*validarStock,*/
+    validarStock,
     existeProductos,
     existeProductoById
 } from "../helpers/db-validators.js"
@@ -25,7 +25,7 @@ import {isClient} from '../middlewares/verify-admin.js'
 
 const router = Router();
 
-router.get("/", isAdmin,  productGet);
+router.get("/", productGet);
 router.get("/control", isAdmin, controlInventario);
 router.get("/agotados", isAdmin, productosAgotados);
 router.get("/search", isClient, buscarProducto);

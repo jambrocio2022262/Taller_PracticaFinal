@@ -27,7 +27,6 @@ router.post(
         check("email", "The email is obligatory").isEmail(),
         check("email").custom(existeEmail),
         check("password", "The password is most be 6 characters").isLength({min: 6}),
-        check("role", "The role must be ADMIN_ROLE / CLIENT_ROLE").not().isEmpty(),
         validarCampos,
     ],usuarioPost)
 

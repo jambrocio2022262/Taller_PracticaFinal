@@ -16,3 +16,5 @@ const invoiceSchema = mongoose.Schema({
         default: Date.now
     }
 })
+
+export default mongoose.model("Invoice", invoiceSchema);
