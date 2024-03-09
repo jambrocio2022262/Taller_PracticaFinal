@@ -1,0 +1,44 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "productCollectionClient",
+    "dateExported": "2024-03-09T05:47:45.147Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "2e45150b-6f75-4b02-9ff7-ef087bf584e4",
+            "colId": "b2c74935-69a3-40c4-949c-3708c984f6b7",
+            "containerId": "",
+            "name": "buscarProducto get",
+            "url": "http://localhost:8080/FinalProject/v1/product/search?name=Kit Kat",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-07T05:23:05.523Z",
+            "modified": "2024-03-07T05:24:36.262Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "name",
+                    "value": "Kit Kat",
+                    "isPath": false
+                }
+            ],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "4203164a-09f4-4421-a540-69f57f6c56de",
+            "colId": "b2c74935-69a3-40c4-949c-3708c984f6b7",
+            "containerId": "",
+            "name": "buscarCatalogo get",
+            "url": "http://localhost:8080/FinalProject/v1/product/category/Helado",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-07T05:35:29.203Z",
+            "modified": "2024-03-07T05:40:35.722Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

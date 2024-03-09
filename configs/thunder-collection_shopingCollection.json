@@ -1,0 +1,80 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "shopingCollection",
+    "dateExported": "2024-03-09T05:47:49.123Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "88488a1a-9cf5-4cc7-9d79-5823c87e03fc",
+            "colId": "8bd488dc-9f43-4b6d-b3d7-152797d798e5",
+            "containerId": "",
+            "name": "shopingPost",
+            "url": "http://localhost:8080/FinalProject/v1/shoping",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-08T05:48:33.647Z",
+            "modified": "2024-03-09T05:39:18.376Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZjVlZjVmNzE0YTE3OGQ0M2U4ZjgiLCJpYXQiOjE3MDk5NjI3NTAsImV4cCI6MTcwOTk2NjM1MH0.WOBeO97h7dATD7IO2nDH_uAxDevZZfX7eGn9I8pjams"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nameProduct\": \"Computadora\",\n  \"quantity\": 20\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "33d5b8ba-a6d1-4c89-8a7c-5beca6b040e5",
+            "colId": "8bd488dc-9f43-4b6d-b3d7-152797d798e5",
+            "containerId": "",
+            "name": "shopingGet",
+            "url": "http://localhost:8080/FinalProject/v1/shoping",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-08T06:14:13.340Z",
+            "modified": "2024-03-09T05:39:26.350Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViZjVlZjVmNzE0YTE3OGQ0M2U4ZjgiLCJpYXQiOjE3MDk5NjI3NTAsImV4cCI6MTcwOTk2NjM1MH0.WOBeO97h7dATD7IO2nDH_uAxDevZZfX7eGn9I8pjams"
+                }
+            ],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        },
+        {
+            "_id": "84b2d033-9215-4221-8710-48fbe852a11a",
+            "colId": "8bd488dc-9f43-4b6d-b3d7-152797d798e5",
+            "containerId": "",
+            "name": "shopingDelete",
+            "url": "http://localhost:8080/FinalProject/v1/shoping?nameProduct=Sariaa",
+            "method": "DELETE",
+            "sortNum": 30000,
+            "created": "2024-03-08T13:53:51.733Z",
+            "modified": "2024-03-08T21:25:32.627Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3ZWJhM2ExMzY2NWNlMjdiZDA1MjEiLCJpYXQiOjE3MDk5MzMwOTEsImV4cCI6MTcwOTkzNjY5MX0.s4hH_Qgz11owDU4v2U2IXqq6GTLrBMwiqPkOZA9DhDw"
+                }
+            ],
+            "params": [
+                {
+                    "name": "nameProduct",
+                    "value": "Sariaa",
+                    "isPath": false
+                }
+            ],
+            "reqType": "del",
+            "tests": []
+        }
+    ]
+}

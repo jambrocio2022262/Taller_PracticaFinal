@@ -1,0 +1,24 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "historyProduct",
+    "dateExported": "2024-03-09T05:48:14.027Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "05147ba2-6f60-4634-9a7f-14cf7694233a",
+            "colId": "6969bc25-4ca8-428f-b4ee-010d2cf663db",
+            "containerId": "",
+            "name": "HistoryProduct get",
+            "url": "http://localhost:8080/FinalProject/v1/invoice/65ebeadbaff399095ca2d7ff",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-09T05:43:39.812Z",
+            "modified": "2024-03-09T05:45:48.085Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}

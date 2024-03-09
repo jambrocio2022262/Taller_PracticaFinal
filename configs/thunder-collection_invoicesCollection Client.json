@@ -1,0 +1,24 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "invoicesCollection Client",
+    "dateExported": "2024-03-09T05:48:10.130Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "7f1eb5b5-471d-4e94-b76d-187b1e8dda3a",
+            "colId": "0669aca3-7366-4af4-b0aa-68934b3a5e64",
+            "containerId": "",
+            "name": "invoiceDetallada get",
+            "url": "http://localhost:8080/FinalProject/v1/invoice/65ebeadbaff399095ca2d7ff",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-03-09T05:43:02.484Z",
+            "modified": "2024-03-09T05:45:39.008Z",
+            "headers": [],
+            "params": [],
+            "reqType": "get",
+            "tests": []
+        }
+    ]
+}

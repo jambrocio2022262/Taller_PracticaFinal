@@ -1,45 +1,45 @@
 {
     "client": "Thunder Client",
-    "collectionName": "categoryCollection",
-    "dateExported": "2024-03-06T23:15:00.387Z",
+    "collectionName": "categoryCollectionAdmin",
+    "dateExported": "2024-03-09T05:47:15.885Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "9859806b-697a-4664-bf83-e4985ab69753",
-            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
+            "_id": "30cd64ae-2351-4446-a458-29208316e5d1",
+            "colId": "b7d8162c-f7ed-4e54-8cf6-9fe6a938941d",
             "containerId": "",
             "name": "category post",
             "url": "http://localhost:8080/FinalProject/v1/category",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-06T20:34:41.378Z",
-            "modified": "2024-03-06T20:41:00.923Z",
+            "created": "2024-03-07T03:21:39.596Z",
+            "modified": "2024-03-09T04:57:11.480Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU4ZDNmNTBjMTRiMGQ4NGNmYjljMDMiLCJpYXQiOjE3MDk3NTc1NzgsImV4cCI6MTcwOTc2MTE3OH0.6w6__PSqTy-Yi_Y4wp0QUSGuFDHAA8MBmEpCOcuf84s"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViOTY4OWJjZDA5ZGI3ZWY2Yzg4OTkiLCJpYXQiOjE3MDk5NjAxMTUsImV4cCI6MTcwOTk2MzcxNX0.WkGdzKtho0JQzSBd60hZRCFgm-qGnM1vZJMsC_YfqpI"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\": \"Helado\",\n  \"description\": \"Chocolates Importados US\"\n}",
+                "raw": "{\n  \"name\": \"Construccion\",\n  \"description\": \"Trabajos de obras civiles\"\n}",
                 "form": []
             },
             "reqType": "post",
             "tests": []
         },
         {
-            "_id": "f5b38699-7a00-47d0-907c-43a68be8404e",
-            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
+            "_id": "f99482fe-bbcc-4a64-b7d9-6acef61e6773",
+            "colId": "b7d8162c-f7ed-4e54-8cf6-9fe6a938941d",
             "containerId": "",
             "name": "category get",
             "url": "http://localhost:8080/FinalProject/v1/category?desde=0&limite=20",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-06T20:34:41.379Z",
-            "modified": "2024-03-06T20:34:41.379Z",
+            "created": "2024-03-07T03:21:39.598Z",
+            "modified": "2024-03-07T03:21:39.598Z",
             "headers": [],
             "params": [
                 {
@@ -56,15 +56,15 @@
             "tests": []
         },
         {
-            "_id": "67fa42f1-7e1d-46be-b201-2a3a1c5cb1cb",
-            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
+            "_id": "dc94209a-0a1a-4b5f-8559-4b8983782daf",
+            "colId": "b7d8162c-f7ed-4e54-8cf6-9fe6a938941d",
             "containerId": "",
             "name": "category put",
             "url": "http://localhost:8080/FinalProject/v1/category/65e8d4dcd4a198fbccd3cd80",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-03-06T20:34:41.380Z",
-            "modified": "2024-03-06T20:41:58.285Z",
+            "created": "2024-03-07T03:21:39.599Z",
+            "modified": "2024-03-07T03:21:39.599Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -77,19 +77,18 @@
                 "raw": "{\n  \"name\": \"Chocolates\",\n  \"description\": \"Chocolates Importados ARG\"\n}",
                 "form": []
             },
-            "reqType": "put",
             "tests": []
         },
         {
-            "_id": "35bc2245-70f2-48a0-8724-17c1a2b3f1c9",
-            "colId": "6d239958-631b-4ed9-92f1-c6bd4a006809",
+            "_id": "c711ac9c-b89d-4e39-af22-5d9e84f1b644",
+            "colId": "b7d8162c-f7ed-4e54-8cf6-9fe6a938941d",
             "containerId": "",
             "name": "category delete",
             "url": "http://localhost:8080/FinalProject/v1/category/65e8d41f0c14b0d84cfb9c07",
             "method": "DELETE",
             "sortNum": 50000,
-            "created": "2024-03-06T20:34:41.381Z",
-            "modified": "2024-03-06T20:42:37.069Z",
+            "created": "2024-03-07T03:21:39.600Z",
+            "modified": "2024-03-07T03:21:39.600Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -97,7 +96,6 @@
                 }
             ],
             "params": [],
-            "reqType": "del",
             "tests": []
         }
     ]

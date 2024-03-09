@@ -1,39 +1,40 @@
 {
     "client": "Thunder Client",
     "collectionName": "usersCollection",
-    "dateExported": "2024-03-06T23:15:20.824Z",
+    "dateExported": "2024-03-09T05:47:41.875Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "afa5b12b-24e6-4ce6-8a8c-897d5d686304",
-            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
+            "_id": "05fcab3f-ecfb-4e23-a7f8-729bb916c86e",
+            "colId": "04088e2e-a047-4bd1-b621-08e7ac9de593",
             "containerId": "",
             "name": "user post",
             "url": "http://localhost:8080/FinalProject/v1/users",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-03-06T20:34:41.433Z",
-            "modified": "2024-03-06T20:34:41.433Z",
+            "created": "2024-03-07T03:21:39.658Z",
+            "modified": "2024-03-09T03:36:17.274Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"Josue Ambrocio\",\n  \"email\":\"jambrocio90@gmail.com\",\n  \"password\":\"123456\",\n  \"role\":\"CLIENT_ROLE\"\n}",
+                "raw": "{\n  \"name\":\"Josue Ambrocio\",\n  \"email\":\"jambrocio90@gmail.com\",\n  \"password\":\"123456\"\n}",
                 "form": []
             },
+            "reqType": "post",
             "tests": []
         },
         {
-            "_id": "62bd8c47-f5c9-4cf0-b35e-6abbf4710483",
-            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
+            "_id": "cf7556d3-141b-4bd2-bdb9-04f54d3d073e",
+            "colId": "04088e2e-a047-4bd1-b621-08e7ac9de593",
             "containerId": "",
             "name": "user get",
             "url": "http://localhost:8080/FinalProject/v1/users?desde=0&limite=20",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-03-06T20:34:41.434Z",
-            "modified": "2024-03-06T20:34:41.434Z",
+            "created": "2024-03-07T03:21:39.659Z",
+            "modified": "2024-03-07T03:21:39.659Z",
             "headers": [],
             "params": [
                 {
@@ -50,15 +51,15 @@
             "tests": []
         },
         {
-            "_id": "f5b91212-f364-4750-aa29-a7f402975ff0",
-            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
+            "_id": "d7a69575-1fcf-40c1-8e93-cef63abc50fc",
+            "colId": "04088e2e-a047-4bd1-b621-08e7ac9de593",
             "containerId": "",
             "name": "user put",
             "url": "http://localhost:8080/FinalProject/v1/users/65e792aca99c5c6e61253f3b",
             "method": "PUT",
             "sortNum": 30000,
-            "created": "2024-03-06T20:34:41.435Z",
-            "modified": "2024-03-06T20:34:41.435Z",
+            "created": "2024-03-07T03:21:39.660Z",
+            "modified": "2024-03-07T03:21:39.660Z",
             "headers": [],
             "params": [],
             "body": {
@@ -69,15 +70,15 @@
             "tests": []
         },
         {
-            "_id": "449642b9-5a26-4a37-8a02-2640de4794d4",
-            "colId": "6dc81339-5787-41a7-a6ae-966292897189",
+            "_id": "661afcf7-5a66-439f-9985-327dca43bc7e",
+            "colId": "04088e2e-a047-4bd1-b621-08e7ac9de593",
             "containerId": "",
             "name": "user delete",
             "url": "http://localhost:8080/FinalProject/v1/users/65e792ffa99c5c6e61253f44",
             "method": "DELETE",
             "sortNum": 40000,
-            "created": "2024-03-06T20:34:41.437Z",
-            "modified": "2024-03-06T20:34:41.437Z",
+            "created": "2024-03-07T03:21:39.661Z",
+            "modified": "2024-03-07T03:21:39.661Z",
             "headers": [
                 {
                     "name": "x-token",

@@ -1,0 +1,119 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "productCollectionAdmin",
+    "dateExported": "2024-03-09T05:47:37.803Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "fd4eab04-a2aa-4cb2-949b-3a9c359f45fc",
+            "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
+            "containerId": "",
+            "name": "product post",
+            "url": "http://localhost:8080/FinalProject/v1/product",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-03-07T03:21:39.637Z",
+            "modified": "2024-03-09T05:00:21.023Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViOTY4OWJjZDA5ZGI3ZWY2Yzg4OTkiLCJpYXQiOjE3MDk5NjAxMTUsImV4cCI6MTcwOTk2MzcxNX0.WkGdzKtho0JQzSBd60hZRCFgm-qGnM1vZJMsC_YfqpI"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"PHM\",\n  \"description\":\"Hamburguesas Calientes\",\n  \"category\":\"Comida\",\n  \"price\":\"10.00\",\n  \"stock\":\"100\"\n}",
+                "form": []
+            },
+            "reqType": "post",
+            "tests": []
+        },
+        {
+            "_id": "ed7bf586-7eb2-4a19-813d-164f0e6dab4a",
+            "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
+            "containerId": "",
+            "name": "product get",
+            "url": "http://localhost:8080/FinalProject/v1/product",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-03-07T03:21:39.638Z",
+            "modified": "2024-03-07T03:21:39.638Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "87504e65-a81c-4d92-9c56-59671074ad97",
+            "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
+            "containerId": "",
+            "name": "product put",
+            "url": "http://localhost:8080/FinalProject/v1/product/65e7fa591996b08085884801",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2024-03-07T03:21:39.639Z",
+            "modified": "2024-03-07T03:21:39.639Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3ZWJhM2ExMzY2NWNlMjdiZDA1MjEiLCJpYXQiOjE3MDk3MDY5NjYsImV4cCI6MTcwOTcxMDU2Nn0.xYuJJGdaS2-bCtMQUDouwTof88TRdlPuEN5RCylRjZM"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"name\":\"M&M\",\n  \"description\":\"Bolsa de Chocolates\",\n  \"category\":\"Chocolate\",\n  \"price\":\"15.00\",\n  \"stock\":\"100\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "64e01a5c-7b5f-4c99-9274-d7be7ab556d0",
+            "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
+            "containerId": "",
+            "name": "product delete",
+            "url": "http://localhost:8080/FinalProject/v1/product/65e7f98da41403f9fedfea49",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2024-03-07T03:21:39.640Z",
+            "modified": "2024-03-07T03:21:39.640Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3ZWJhM2ExMzY2NWNlMjdiZDA1MjEiLCJpYXQiOjE3MDk3MDY5NjYsImV4cCI6MTcwOTcxMDU2Nn0.xYuJJGdaS2-bCtMQUDouwTof88TRdlPuEN5RCylRjZM"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "82f7f78e-227f-4616-b176-27439d266809",
+            "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
+            "containerId": "",
+            "name": "controlInvetario get",
+            "url": "http://localhost:8080/FinalProject/v1/product/control",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-03-07T04:20:51.269Z",
+            "modified": "2024-03-07T04:27:53.632Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "140dc940-6bc6-434c-a002-236fcdf7bad1",
+            "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
+            "containerId": "",
+            "name": "productosAgotados get",
+            "url": "http://localhost:8080/FinalProject/v1/product/agotados",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-03-07T04:45:05.236Z",
+            "modified": "2024-03-07T04:45:38.605Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
