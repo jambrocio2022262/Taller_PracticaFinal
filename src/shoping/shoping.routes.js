@@ -13,7 +13,7 @@ import {isClient} from '../middlewares/verify-admin.js'
 const router = Router();
 
 router.get("/", validarJWT, shopingGet);
-router.delete("/", validarJWT,isClient, shopingDelete);
+router.delete("/", validarJWT, isClient, shopingDelete);
 
 router.post(
     "/",

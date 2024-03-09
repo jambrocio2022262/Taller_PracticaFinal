@@ -4,9 +4,10 @@ import { validationResult } from 'express-validator';
 
 export const createInvoice = async (req, res) =>{
     const user = req.usuario;
+    const idShoping = req.shoping;
 
     try {
-        const shoping = await Shoping.findOne({user});
+        const shoping = await Shoping.findOne({idShoping});
 
         if(!shoping){
             return res.status(404).json({msg: 'No shopping cart was found for this user'})

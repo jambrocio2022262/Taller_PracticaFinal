@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "productCollectionAdmin",
-    "dateExported": "2024-03-09T05:47:37.803Z",
+    "dateExported": "2024-03-14T07:01:23.812Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,17 +14,17 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-07T03:21:39.637Z",
-            "modified": "2024-03-09T05:00:21.023Z",
+            "modified": "2024-03-14T04:27:33.603Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViOTY4OWJjZDA5ZGI3ZWY2Yzg4OTkiLCJpYXQiOjE3MDk5NjAxMTUsImV4cCI6MTcwOTk2MzcxNX0.WkGdzKtho0JQzSBd60hZRCFgm-qGnM1vZJMsC_YfqpI"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzODkwNjIsImV4cCI6MTcxMDM5MjY2Mn0.1bqfh38mRRz4VsSoDLnI4nTUmSYTuDY7OPRNs5YaCYU"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"PHM\",\n  \"description\":\"Hamburguesas Calientes\",\n  \"category\":\"Comida\",\n  \"price\":\"10.00\",\n  \"stock\":\"100\"\n}",
+                "raw": "{\n  \"name\":\"ABCD\",\n  \"description\":\"Pasteles de boda\",\n  \"category\":\"Reposteria\",\n  \"price\":\"1000.00\",\n  \"stock\":\"2\"\n}",
                 "form": []
             },
             "reqType": "post",
@@ -49,23 +49,24 @@
             "colId": "6e7782e3-f188-4e10-aa8c-cb5e64a94e69",
             "containerId": "",
             "name": "product put",
-            "url": "http://localhost:8080/FinalProject/v1/product/65e7fa591996b08085884801",
+            "url": "http://localhost:8080/FinalProject/v1/product/65f27826b23932d97081a327",
             "method": "PUT",
             "sortNum": 30000,
             "created": "2024-03-07T03:21:39.639Z",
-            "modified": "2024-03-07T03:21:39.639Z",
+            "modified": "2024-03-14T04:08:58.187Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWU3ZWJhM2ExMzY2NWNlMjdiZDA1MjEiLCJpYXQiOjE3MDk3MDY5NjYsImV4cCI6MTcwOTcxMDU2Nn0.xYuJJGdaS2-bCtMQUDouwTof88TRdlPuEN5RCylRjZM"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzODkwNjIsImV4cCI6MTcxMDM5MjY2Mn0.1bqfh38mRRz4VsSoDLnI4nTUmSYTuDY7OPRNs5YaCYU"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"name\":\"M&M\",\n  \"description\":\"Bolsa de Chocolates\",\n  \"category\":\"Chocolate\",\n  \"price\":\"15.00\",\n  \"stock\":\"100\"\n}",
+                "raw": "{\n  \"name\":\"JHO\",\n  \"description\":\"Pasteles de XV\",\n  \"category\":\"Reposteria\",\n  \"price\":\"1000.00\",\n  \"stock\":\"20\"\n}",
                 "form": []
             },
+            "reqType": "put",
             "tests": []
         },
         {
@@ -96,9 +97,15 @@
             "method": "GET",
             "sortNum": 50000,
             "created": "2024-03-07T04:20:51.269Z",
-            "modified": "2024-03-07T04:27:53.632Z",
-            "headers": [],
+            "modified": "2024-03-14T04:13:59.006Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzODkwNjIsImV4cCI6MTcxMDM5MjY2Mn0.1bqfh38mRRz4VsSoDLnI4nTUmSYTuDY7OPRNs5YaCYU"
+                }
+            ],
             "params": [],
+            "reqType": "get",
             "tests": []
         },
         {
@@ -110,9 +117,15 @@
             "method": "GET",
             "sortNum": 60000,
             "created": "2024-03-07T04:45:05.236Z",
-            "modified": "2024-03-07T04:45:38.605Z",
-            "headers": [],
+            "modified": "2024-03-14T04:14:33.985Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzODkwNjIsImV4cCI6MTcxMDM5MjY2Mn0.1bqfh38mRRz4VsSoDLnI4nTUmSYTuDY7OPRNs5YaCYU"
+                }
+            ],
             "params": [],
+            "reqType": "get",
             "tests": []
         }
     ]

@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "productCollectionClient",
-    "dateExported": "2024-03-09T05:47:45.147Z",
+    "dateExported": "2024-03-14T07:01:34.371Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -10,16 +10,21 @@
             "colId": "b2c74935-69a3-40c4-949c-3708c984f6b7",
             "containerId": "",
             "name": "buscarProducto get",
-            "url": "http://localhost:8080/FinalProject/v1/product/search?name=Kit Kat",
+            "url": "http://localhost:8080/FinalProject/v1/product/search?name=ABCD",
             "method": "GET",
             "sortNum": 10000,
             "created": "2024-03-07T05:23:05.523Z",
-            "modified": "2024-03-07T05:24:36.262Z",
-            "headers": [],
+            "modified": "2024-03-14T04:32:01.581Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyN2JlN2Q2ZDg1MjgzZjAyZjI2NzkiLCJpYXQiOjE3MTAzOTA2ODgsImV4cCI6MTcxMDM5NDI4OH0.f0vI1sk2q7Z5NDjKrAQJ6N1mCPr_tjv-it1FpEz9X-A"
+                }
+            ],
             "params": [
                 {
                     "name": "name",
-                    "value": "Kit Kat",
+                    "value": "ABCD",
                     "isPath": false
                 }
             ],
@@ -31,13 +36,19 @@
             "colId": "b2c74935-69a3-40c4-949c-3708c984f6b7",
             "containerId": "",
             "name": "buscarCatalogo get",
-            "url": "http://localhost:8080/FinalProject/v1/product/category/Helado",
+            "url": "http://localhost:8080/FinalProject/v1/product/category/Reposteria",
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-03-07T05:35:29.203Z",
-            "modified": "2024-03-07T05:40:35.722Z",
-            "headers": [],
+            "modified": "2024-03-14T04:26:52.496Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyN2JlN2Q2ZDg1MjgzZjAyZjI2NzkiLCJpYXQiOjE3MTAzOTAyOTUsImV4cCI6MTcxMDM5Mzg5NX0.I269JGlsdStqc5DfNjlTq14qZxd_wCrkSmc6Hn4ZYgI"
+                }
+            ],
             "params": [],
+            "reqType": "get",
             "tests": []
         }
     ]

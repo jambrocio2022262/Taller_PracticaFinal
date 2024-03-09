@@ -26,10 +26,10 @@ import {isClient} from '../middlewares/verify-admin.js'
 const router = Router();
 
 router.get("/", productGet);
-router.get("/control", isAdmin, controlInventario);
-router.get("/agotados", isAdmin, productosAgotados);
-router.get("/search", isClient, buscarProducto);
-router.get("/category/:category", isClient, catalogoProducto);
+router.get("/control", validarJWT,isAdmin, controlInventario);
+router.get("/agotados",validarJWT,isAdmin, productosAgotados);
+router.get("/search",validarJWT, isClient, buscarProducto);
+router.get("/category/:category",validarJWT ,isClient, catalogoProducto);
 
 router.post(
     "/",

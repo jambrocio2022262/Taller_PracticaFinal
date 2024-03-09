@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "invoicesCollection Admin",
-    "dateExported": "2024-03-09T05:47:53.171Z",
+    "dateExported": "2024-03-14T07:01:45.187Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,20 +14,20 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-03-09T04:36:10.087Z",
-            "modified": "2024-03-09T05:41:03.980Z",
+            "modified": "2024-03-14T04:48:52.872Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWViOTY4OWJjZDA5ZGI3ZWY2Yzg4OTkiLCJpYXQiOjE3MDk5NjI2NTMsImV4cCI6MTcwOTk2NjI1M30.8DjZYj5wMJZ67RnP3pboMzBTyf09ZJy57Pfw40DFDBs"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzOTE3MTQsImV4cCI6MTcxMDM5NTMxNH0.1c2HGAhlPP_aHobY97wzKSOKF6-lAyFUtrEPQEZcWxM"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"user\": \"65ebf5ef5f714a178d43e8f8\"\n}",
+                "raw": "{\n  \"idShoping\": \"65f27e04d6d85283f02f2698\"\n}",
                 "form": []
             },
-            "reqType": "get",
+            "reqType": "post",
             "tests": []
         },
         {
@@ -39,8 +39,13 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-03-09T04:37:14.743Z",
-            "modified": "2024-03-09T05:46:15.259Z",
-            "headers": [],
+            "modified": "2024-03-14T04:49:03.240Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzOTE3MTQsImV4cCI6MTcxMDM5NTMxNH0.1c2HGAhlPP_aHobY97wzKSOKF6-lAyFUtrEPQEZcWxM"
+                }
+            ],
             "params": [],
             "reqType": "get",
             "tests": []
@@ -50,12 +55,17 @@
             "colId": "7b790de0-3be0-4567-90e2-e916b6d2512e",
             "containerId": "",
             "name": "invoiceDatallada get",
-            "url": "http://localhost:8080/FinalProject/v1/factura/65ebeadbaff399095ca2d7ff",
+            "url": "http://localhost:8080/FinalProject/v1/invoice/65f281b45afce4ec4755127f",
             "method": "GET",
             "sortNum": 30000,
             "created": "2024-03-09T04:39:48.934Z",
-            "modified": "2024-03-09T05:45:41.222Z",
-            "headers": [],
+            "modified": "2024-03-14T04:52:22.233Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWYyNzQ2ZWIyMzkzMmQ5NzA4MWEzMTUiLCJpYXQiOjE3MTAzOTE3MTQsImV4cCI6MTcxMDM5NTMxNH0.1c2HGAhlPP_aHobY97wzKSOKF6-lAyFUtrEPQEZcWxM"
+                }
+            ],
             "params": [],
             "reqType": "get",
             "tests": []
