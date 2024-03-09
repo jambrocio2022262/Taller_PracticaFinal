@@ -14,7 +14,7 @@ export const isClient = (req, res, next) => {
     if (user.role === "CLIENT_ROLE") return next();
   
     return res.status(400).json({
-      msg: "You not have access",
+      msg: "You not have access, ",
     });
   };
 

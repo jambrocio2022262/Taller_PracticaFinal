@@ -20,25 +20,28 @@ import {
 
 import {validarCampos} from '../middlewares/validar-campos.js'
 import {validarJWT} from '../middlewares/validar-jwt.js'
+import {isAdmin} from '../middlewares/verify-admin.js'
+import {isClient} from '../middlewares/verify-admin.js'
 
 const router = Router();
 
-router.get("/", productGet);
-router.get("/control", controlInventario);
-router.get("/agotados", productosAgotados);
-router.get("/search", buscarProducto);
-router.get("/category/:category", catalogoProducto);
+router.get("/", isAdmin,  productGet);
+router.get("/control", isAdmin, controlInventario);
+router.get("/agotados", isAdmin, productosAgotados);
+router.get("/search", isClient, buscarProducto);
+router.get("/category/:category", isClient, catalogoProducto);
 
 router.post(
     "/",
     [
         validarJWT,
+        isAdmin,
         check("name", "The name is obligatory").not().isEmpty(),
         check("name").custom(existeProductos),
         check("description", "The desciprion is obligatory").not().isEmpty(),
         check("price", "The price is obligatory").not().isEmpty(),
         check("stock", "The stock is obligatory").not().isEmpty(),
-        /*check("stock").custom(validarStock),*/
+        check("stock").custom(validarStock),
         validarCampos,
     ], productPost)
 
@@ -46,6 +49,7 @@ router.put(
     "/:id",
     [
         validarJWT,
+        isAdmin,
         check("id", "ID not valid").isMongoId(),
         check("id").custom(existeProductoById),
         validarCampos,
@@ -55,6 +59,7 @@ router.put(
     "/:id",
     [
         validarJWT,
+        isAdmin,
         check("id", "ID not valid").isMongoId(),
         check("id").custom(existeProductoById),
         validarCampos,

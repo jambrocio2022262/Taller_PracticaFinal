@@ -8,16 +8,18 @@ import{
 } from './shoping.controller.js';
 
 import { validarJWT } from "../middlewares/validar-jwt.js";
+import {isClient} from '../middlewares/verify-admin.js'
 
 const router = Router();
 
-router.get("/", validarJWT, shopingGet);
-router.delete("/", validarJWT, shopingDelete);
+router.get("/", validarJWT, isClient, shopingGet);
+router.delete("/", validarJWT,isClient, shopingDelete);
 
 router.post(
     "/",
     [
         validarJWT,
+        isClient,
         check("nameProduct", "The name the product is obligatory").not().isEmpty(),
         check("quantity", "The quently is obligatory").not().isEmpty()
     ], shopingPost)
