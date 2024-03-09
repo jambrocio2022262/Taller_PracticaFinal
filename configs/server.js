@@ -23,7 +23,7 @@ class Server{
         this.categoryPath ='/FinalProject/v1/category'
         this.productPath ='/FinalProject/v1/product'
         this.shopingPath ='/FinalProject/v1/shoping'
-        this.invoicePath ='/FinalProject/v1/invoice'
+        this.invoicePath ='/FinalProject/v1/invoice' 
 
 
         this.middlewares();
